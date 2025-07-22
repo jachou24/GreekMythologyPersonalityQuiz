@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Personality Quiz </title>
+    <link rel="stylesheet" href="generalStyle.css">
+    <link rel="stylesheet" href="questionsStyle.css">
+    <link rel="stylesheet" href="qbuttonStyle.css">
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body style="background-color:rgb(254, 255, 241)">
+
+    <div id="questionDisplay" class="qDiv" style="padding:20px;margin:auto; margin-top:50px;">
+        <h1 id="qnumDisplay" class="center">✰   1   ✰</h1>
+        <img id="pic" class="center" style="width:250px;height:250px;" src="envelope.png">
+        <p id="promptDisplay" class="center">You come home from school to find a letter on your nightstand.</p>
+    </div>
+
+    <div id="answerDisplay" class="aDiv" style="padding:20px;margin:auto;">
+        <button id="a" class="button" style="margin-top:50px;" onclick="newQuestion(1, 'a')"> A letter? I wonder what it is. You open it with excitement. </button> 
+        <button id="b" class="button" onclick="newQuestion(1, 'b')"> Hmm.. I wonder what this could be... You open it with caution. </button> 
+        <button id="c" class="button" onclick="newQuestion(1, 'c')"> Where did this come from? Whatever, I have to do my homework first, I'll look at it later. </button> 
+    </div>
+
+</body>
+</html>

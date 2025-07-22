@@ -1,0 +1,37 @@
+/* standard button format */
+.button {
+    background-color: #ea800f;
+    border: 2px solid #432305;
+    border-radius: 30px;
+    box-shadow: #432305 4px 4px 0 0;
+    color: #432305;
+    cursor: pointer;
+    display: block;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 20px auto;
+    padding: 20px 0;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    
+  }
+  
+.button:hover {
+    background-color: #e99c49;
+  }
+  
+.button:active {
+    box-shadow: #432305 2px 2px 0 0;
+    transform: translate(2px, 2px);
+  }
+  
+@media (min-width: 768px) {
+    .button {
+      min-width: 120px;
+      padding: 0 25px;
+    }
+  }

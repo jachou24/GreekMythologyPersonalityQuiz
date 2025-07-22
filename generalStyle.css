@@ -1,0 +1,22 @@
+/* Default styles for desktop and larger screens */
+.mydiv {
+    width: 50%;
+    padding: 20px;
+}
+
+/* Styles for screens with a maximum width of 768px (common breakpoint for tablets/mobiles) */
+@media (max-width: 768px) {
+    .mydiv {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+/* center anything */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+  }

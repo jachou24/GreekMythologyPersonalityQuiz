@@ -3,12 +3,20 @@
     width: 50%;
     padding: 20px;
 }
+.result {
+    width: 380px;
+    height: 700px;
+}
 
 /* Styles for screens with a maximum width of 768px (common breakpoint for tablets/mobiles) */
 @media (max-width: 768px) {
     .mydiv {
         width: 90%;
         padding: 10px;
+    }
+    .result {
+        width: 50%vw;
+        height: 90%vh;
     }
 }
 

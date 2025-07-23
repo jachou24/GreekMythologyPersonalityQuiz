@@ -18,6 +18,7 @@ loadingText.style.margin = 'auto';
 loadingText.style.marginTop = '50vw';
 loadingText.style.marginBottom = '0px';
 loadingText.style.color = '#432305';
+loadingText.style.zIndex = 9999;
 loadingText.textContent = 'You feel your ancestors blood surging through you...';
 
 function restart() {

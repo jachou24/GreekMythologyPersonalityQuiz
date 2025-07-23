@@ -17,6 +17,7 @@ loadingText.className = 'center';
 loadingText.style.margin = 'auto';
 loadingText.style.marginTop = '50vw';
 loadingText.style.marginBottom = '0px';
+loadingText.style.color = '#432305';
 loadingText.textContent = 'You feel your ancestors blood surging through you...';
 
 function restart() {
@@ -351,8 +352,8 @@ function newQuestion(questionNumber, butid) {
         sessionStorage.setItem('resultGod', keyOfHighestValue);
         qnumDisplay.textContent = '';
         document.getElementById('pic').style.display = 'none';
-        document.body.appendChild(loadingText);
         document.body.appendChild(glowing);
+        document.body.appendChild(loadingText);
 
         // Allow browser to render the DOM updates before redirect timer
         requestAnimationFrame(() => {

@@ -11,10 +11,7 @@ for (let m = 0; m < gods.length; m++) {
 
 let glowing = document.createElement('img'); 
 glowing.src='glowing.gif';
-glowing.className = 'center';
-glowing.style.marginTop = '50%';
-glowing.style.width = '85%';
-glowing.style.height = '90%';
+glowing.className = 'center glowing';
 let loadingText = document.createElement('div');
 loadingText.className = 'center';
 loadingText.style.margin = 'auto';
@@ -302,7 +299,7 @@ function newQuestion(questionNumber, butid) {
     ];
 
     const pics = [];
-    for (t = 1; t <= 13; t++) {
+    for (let t = 1; t <= 13; t++) {
         pics.push(`q${t}.png`);
     }
 
@@ -340,7 +337,7 @@ function newQuestion(questionNumber, butid) {
     
     // changing the question number display
     const qnumDisplay = document.getElementById('qnumDisplay');
-    if (questionNumber == questionsList.length) {
+    if (questionNumber >= questionsList.length) {
         let highestValue = -1;
         let keyOfHighestValue = null;
         for (const [key, value] of scores.entries()) {
@@ -352,9 +349,17 @@ function newQuestion(questionNumber, butid) {
         sessionStorage.setItem('resultGod', keyOfHighestValue);
         qnumDisplay.textContent = '';
         document.getElementById('pic').style.display = 'none';
-        document.body.appendChild(loadingText); 
+        document.body.appendChild(loadingText);
         document.body.appendChild(glowing);
-        setTimeout(function () {window.location.href = "results.html";}, 2500);
+
+        // Allow browser to render the DOM updates before redirect timer
+        requestAnimationFrame(() => {
+            requestAnimationFrame(() => {
+                setTimeout(() => {
+                    window.location.href = "results.html";
+                }, 2500);
+            });
+        });
         
 
     } else if (questionNumber!=5) { // quiz over
@@ -364,7 +369,7 @@ function newQuestion(questionNumber, butid) {
     }
     const promptDisplay = document.getElementById('promptDisplay');
     promptDisplay.textContent = questionsList[questionNumber];
-    
+
     // changing story picture
     const pic = document.getElementById('pic');
     pic.src = `qimgs/${pics[questionNumber]}`;

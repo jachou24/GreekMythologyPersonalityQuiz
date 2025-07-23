@@ -15,6 +15,7 @@ glowing.className = 'center glowing';
 let loadingText = document.createElement('div');
 loadingText.className = 'center';
 loadingText.style.margin = 'auto';
+loadingText.style.marginTop = '30vw';
 loadingText.textContent = 'You feel your ancestors blood surging through you...';
 
 function restart() {

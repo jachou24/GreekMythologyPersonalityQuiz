@@ -1,22 +1,24 @@
 /* Default styles for desktop and larger screens */
 .mydiv {
     width: 50%;
-    padding: 20px;
+    padding: 5vw;
 }
+
 .result {
-    width: 380px;
-    height: 700px;
+    width: 30vw;
+    height: 55vh;
 }
 
 /* Styles for screens with a maximum width of 768px (common breakpoint for tablets/mobiles) */
 @media (max-width: 768px) {
     .mydiv {
         width: 90%;
-        padding: 10px;
+        padding: 4vw;
     }
+
     .result {
-        width: 50%vw;
-        height: 90%vh;
+        width: 80vw;
+        height: auto;
     }
 }
 
@@ -27,14 +29,14 @@
     margin-right: auto;
     width: 50%;
     text-align: center;
-  }
+}
 
 .glowing {
-    position : 'fixed';
-    top : '50%';
-    left : '50%';
-    transform : 'translate(-50%, -50%)';
-    width : '25vw';
-    height : 'auto';
-    z-index: '9999';
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25vw;
+    height: auto;
+    z-index: 9999;
 }

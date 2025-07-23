@@ -5,9 +5,10 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: italic;
-    font-size:120%;
+    font-size:100%;
 }
 
 h1 {
     color : #432305;
+    font-size: 7vw;
 }

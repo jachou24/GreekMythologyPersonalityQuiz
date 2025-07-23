@@ -1,4 +1,4 @@
-const gods = ["athena", "hestia", "zeus", "orpheus", "sisyphus", "hera", "dionysus", "poseidon", "demeter"];
+const gods = ["athena", "hestia", "zeus", "sisyphus", "prometheus", "hera", "dionysus", "poseidon", "demeter"];
 let scores = new Map();
 for (let k = 0; k < gods.length; k++) {
     scores.set(gods[k], {val: 0});
@@ -54,7 +54,7 @@ function updateScore(prevQnum, butid) {
                     }
                     break;
                 case 'c':
-                    for (let god of ['athena', 'zeus', 'orpheus', 'sisyphus']) {
+                    for (let god of ['athena', 'zeus', 'sisyphus', 'prometheus']) {
                         scores.get(god).val++;
                     }
                     break;
@@ -63,7 +63,7 @@ function updateScore(prevQnum, butid) {
         case 2:
             switch (butid) {
                 case 'a':
-                    for (let god of ['orpheus', 'dionysus']) {
+                    for (let god of ['sisyphus', 'dionysus']) {
                         scores.get(god).val++;
                     }
                     break;
@@ -73,7 +73,7 @@ function updateScore(prevQnum, butid) {
                     }
                     break;
                 case 'c':
-                    for (let god of ['athena', 'hera', 'sisyphus']) {
+                    for (let god of ['athena', 'hera', 'prometheus']) {
                         scores.get(god).val++;
                     }
                     break;
@@ -82,12 +82,12 @@ function updateScore(prevQnum, butid) {
         case 3:
             switch (butid) {
                 case 'a':
-                    for (let god of ['athena', 'zeus', 'orpheus', 'dionysus', 'poseidon']) {
+                    for (let god of ['athena', 'zeus', 'sisyphus', 'dionysus', 'poseidon']) {
                         scores.get(god).val++;
                     }
                     break;
                 case 'b':
-                    for (let god of ['hestia', 'sisyphus', 'hera', 'demeter']) {
+                    for (let god of ['hestia', 'prometheus', 'hera', 'demeter']) {
                         scores.get(god).val++;
                     }
                     break;
@@ -96,7 +96,7 @@ function updateScore(prevQnum, butid) {
         case 4:
             switch (butid) {
                 case 'a':
-                    for (let god of ['orpheus', 'dionysus']) {
+                    for (let god of ['sisyphus', 'dionysus']) {
                         scores.get(god).val++;
                     }
                     break;
@@ -106,7 +106,7 @@ function updateScore(prevQnum, butid) {
                     }
                     break;
                 case 'c':
-                    for (let god of ['athena', 'hera', 'sisyphus']) {
+                    for (let god of ['athena', 'hera', 'prometheus']) {
                         scores.get(god).val++;
                     }
                     break;
@@ -120,12 +120,12 @@ function updateScore(prevQnum, butid) {
                     }
                     break;
                 case 'b':
-                    for (let god of ['athena', 'orpheus', 'demeter']) {
+                    for (let god of ['athena', 'sisyphus', 'demeter']) {
                         scores.get(god).val++;
                     }
                     break;
                 case 'c':
-                    for (let god of ['hestia', 'sisyphus', 'poseidon']) {
+                    for (let god of ['hestia', 'prometheus', 'poseidon']) {
                         scores.get(god).val++;
                     }
                     break;
@@ -135,7 +135,7 @@ function updateScore(prevQnum, butid) {
         case 7:
             switch (butid) {
                 case 'a':
-                    for (let god of ['zeus', 'orpheus', 'hera', 'dionysus', 'demeter']) {
+                    for (let god of ['zeus', 'sisyphus', 'hera', 'dionysus', 'demeter']) {
                         scores.get(god).val++;
                     }
                     break;
@@ -145,7 +145,7 @@ function updateScore(prevQnum, butid) {
                     }
                     break;
                 case 'c':
-                    for (let god of ['sisyphus', 'poseidon']) {
+                    for (let god of ['prometheus', 'poseidon']) {
                         scores.get(god).val++;
                     }
                     break;
@@ -154,12 +154,12 @@ function updateScore(prevQnum, butid) {
         case 8:
             switch (butid) {
                 case 'a':
-                    for (let god of ['athena', 'orpheus', 'hera']) {
+                    for (let god of ['athena', 'sisyphus', 'hera']) {
                         scores.get(god).val++;
                     }
                     break;
                 case 'b':
-                    for (let god of ['zeus', 'sisyphus', 'poseidon']) {
+                    for (let god of ['zeus', 'prometheus', 'poseidon']) {
                         scores.get(god).val++;
                     }
                     break;
@@ -173,12 +173,12 @@ function updateScore(prevQnum, butid) {
         case 9:
             switch (butid) {
                 case 'a':
-                    for (let god of ['zeus', 'orpheus', 'dionysus']) {
+                    for (let god of ['zeus', 'sisyphus', 'dionysus']) {
                         scores.get(god).val++;
                     }
                     break;
                 case 'b':
-                    for (let god of ['sisyphus', 'hera', 'poseidon']) {
+                    for (let god of ['prometheus', 'hera', 'poseidon']) {
                         scores.get(god).val++;
                     }
                     break;
@@ -197,12 +197,12 @@ function updateScore(prevQnum, butid) {
                     }
                     break;
                 case 'b':
-                    for (let god of ['zeus', 'sisyphus', 'poseidon']) {
+                    for (let god of ['zeus', 'prometheus', 'poseidon']) {
                         scores.get(god).val++;
                     }
                     break;
                 case 'c':
-                    for (let god of ['hestia', 'orpheus', 'demeter']) {
+                    for (let god of ['hestia', 'sisyphus', 'demeter']) {
                         scores.get(god).val++;
                     }
                     break;
@@ -211,12 +211,12 @@ function updateScore(prevQnum, butid) {
         case 11:
             switch (butid) {
                 case 'a':
-                    for (let god of ['hestia', 'zeus', 'orpheus']) {
+                    for (let god of ['hestia', 'zeus', 'sisyphus']) {
                         scores.get(god).val++;
                     }
                     break;
                 case 'b':
-                    for (let god of ['athena', 'sisyphus', 'hera', 'poseidon']) {
+                    for (let god of ['athena', 'prometheus', 'hera', 'poseidon']) {
                         scores.get(god).val++;
                     }
                     break;
@@ -230,12 +230,12 @@ function updateScore(prevQnum, butid) {
         case 12:
             switch (butid) {
                 case 'a':
-                    for (let god of ['athena', 'zeus', 'orpheus']) {
+                    for (let god of ['athena', 'zeus', 'sisyphus']) {
                         scores.get(god).val++;
                     }
                     break;
                 case 'b':
-                    for (let god of ['sisyphus', 'hera', 'poseidon']) {
+                    for (let god of ['prometheus', 'hera', 'poseidon']) {
                         scores.get(god).val++;
                     }
                     break;
@@ -259,7 +259,7 @@ function updateScore(prevQnum, butid) {
                     }
                     break;
                 case 'c':
-                    for (let god of ['athena', 'orpheus', 'sisyphus']) {
+                    for (let god of ['athena', 'sisyphus', 'prometheus']) {
                         scores.get(god).val++;
                     }
                     break;

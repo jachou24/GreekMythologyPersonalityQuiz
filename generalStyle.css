@@ -36,16 +36,11 @@
     margin-top: '20vh';
     margin-bottom: '5%';
     color: '#432305';
-    z-index: 9999;
 }
 
 .glowing {
-    position: fixed;
+    position: relative;
     margin-top: '55vh';
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 25vw;
     height: auto;
-    z-index: 9000;
 }

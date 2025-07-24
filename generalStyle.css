@@ -31,21 +31,21 @@
     text-align: center;
 }
 
+.ltext {
+    margin: 'auto';
+    margin-top: '30vh';
+    margin-bottom: '5%';
+    color: '#432305';
+    z-index: 9999;
+}
+
 .glowing {
     position: fixed;
-    margin-top: 35%;
+    margin-top: '45vh';
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 25vw;
     height: auto;
     z-index: 9000;
-}
-
-.ltext {
-    margin: 'auto';
-    margin-top: '35vh';
-    margin-bottom: '5%';
-    color: '#432305';
-    z-index: 9999;
 }

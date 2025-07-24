@@ -348,8 +348,8 @@ function newQuestion(questionNumber, butid) {
         sessionStorage.setItem('resultGod', keyOfHighestValue);
         qnumDisplay.textContent = '';
         document.getElementById('pic').style.display = 'none';
-        document.body.appendChild(glowing);
         document.body.appendChild(loadingText);
+        document.body.appendChild(glowing);
 
         // Allow browser to render the DOM updates before redirect timer
         requestAnimationFrame(() => {

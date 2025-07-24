@@ -33,13 +33,13 @@
 
 .ltext {
     margin: 'auto';
-    margin-top: 20vh;
+    margin-top: 10vh;
     color: '#FFFFFF';
 }
 
 .glowing {
     position: relative;
-    margin-top: 55vh;
+    margin-top: 25vh;
     width: 25vw;
     height: auto;
 }

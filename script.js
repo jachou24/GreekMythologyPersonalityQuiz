@@ -11,14 +11,9 @@ for (let m = 0; m < gods.length; m++) {
 
 let glowing = document.createElement('img'); 
 glowing.src='glowing.gif';
-glowing.className = 'center glowing';
+glowing.className = 'glowing center';
 let loadingText = document.createElement('div');
-loadingText.className = 'center';
-loadingText.style.margin = 'auto';
-loadingText.style.marginTop = '50vw';
-loadingText.style.marginBottom = '5%';
-loadingText.style.color = '#432305';
-loadingText.style.zIndex = 9999;
+loadingText.className = 'ltext center';
 loadingText.textContent = 'You feel your ancestors blood surging through you...';
 
 function restart() {

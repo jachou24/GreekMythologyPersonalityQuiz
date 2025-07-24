@@ -42,7 +42,7 @@
 .glowing {
     position: fixed;
     margin-top: '55vh';
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 25vw;

@@ -1,5 +1,6 @@
 /* Standard text font */
 @import url('https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
 body {
     font-family: "Winky Rough", sans-serif;
     font-optical-sizing: auto;
@@ -11,4 +12,20 @@ body {
 h1 {
     color : #432305;
     font-size: 7vw;
+}
+
+/* desktop */
+@media (min-width: 768px) {
+    body {
+        font-family: "Winky Rough", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: italic;
+        font-size:150%;
+    }
+    
+    h1 {
+        color : #432305;
+        font-size: 4vw;
+    }
 }

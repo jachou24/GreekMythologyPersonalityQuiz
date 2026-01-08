@@ -1,0 +1,1 @@
+Developed by me and only me. Used AI tools only to calculate chance/probability in the point system (making sure that each character has the possibility of being a result). Designed all graphics on Canva. Works best on mobile currently, other platforms are a work-in-progress (this was my first HTML project).
